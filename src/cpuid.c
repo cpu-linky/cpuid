@@ -2,11 +2,13 @@
 #include <getopt.h>
 #include "vendor/vendor.h"
 #include "features/features.h"
+#include "power/power.h"
 
 void print_help() {
     printf("Usage: cpuid [options]\n");
     printf("Options:\n");
     printf("  -h : Show this help message\n");
+    printf("  -p : Display power and thermal capacities\n");
     printf("  -v : Display CPU vendor information\n");
     printf("  -f : Display CPU features\n");
 }
@@ -19,10 +21,13 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    while ((opt = getopt(argc, argv, "hvf")) != -1) {
+    while ((opt = getopt(argc, argv, "hvfp")) != -1) {
         switch (opt) {
             case 'h':
                 print_help();
+                return 0;
+            case 'p':
+                cpu_power_and_thermal();
                 return 0;
             case 'v':
                 cpu_vendor();

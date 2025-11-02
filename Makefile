@@ -13,5 +13,6 @@ cpuid: $(BIN_FOLDER)
 	gcc -o $(BIN_FOLDER)/cpuid \
 	$(SRC_FOLDER)/cpuid.c \
 	$(SRC_FOLDER)/vendor/vendor.c \
-	$(SRC_FOLDER)/features/features.c
+	$(SRC_FOLDER)/features/features.c \
+	$(SRC_FOLDER)/power/power.c
 
