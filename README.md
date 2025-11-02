@@ -11,3 +11,4 @@ The CPUID instruction can be used to retrieve various information about your CPU
 ## Ressources 
 
 - Main source : [this amazing site](https://www.felixcloutier.com/x86/cpuid) about the `x86`/`ARM64` arch
+- Details about features : [wikipedia](https://en.wikipedia.org/wiki/CPUID#EAX=1:_Processor_Info_and_Feature_Bits)

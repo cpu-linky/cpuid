@@ -85,6 +85,8 @@ const char* edx_feature_names[] = {
     "FXSR", "SSE", "SSE2", "SS", "HTT", "TM", "RESERVED", "PBE"
 };
 
+// Function to retrieve and print CPU features using CPUID instruction
+// For more details, refer to https://en.wikipedia.org/wiki/CPUID#EAX=1:_Processor_Info_and_Feature_Bits
 int cpu_features(){
     unsigned int unused, ecx, edx;
 
