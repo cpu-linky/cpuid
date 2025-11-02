@@ -6,7 +6,28 @@ I am using the `gcc` version : `__get_cpuid()` rather than using the assembly ve
 
 ## `cpuid` instruction
 
-The CPUID instruction can be used to retrieve various information about your CPU, such as its vendor string and model number, the size of internal caches and (more interesting), the list of CPU features supported. We will use it to discuss the features and capacity of CPUs for PC states. 
+The CPUID instruction can be used to retrieve various information about your CPU, such as its vendor string and model number, the size of internal caches and (more interesting), the list of CPU features supported. We will use it to discuss the features and capacity of CPUs for PC states.
+
+## Usage 
+
+```
+Usage: cpuid [options]
+Options
+  -h : Show this help message
+  -p : Display power and thermal capacities
+  -v : Display CPU vendor information
+  -f : Display CPU features
+```
+
+## Build
+
+To build the binaries, simply run :
+
+    make
+
+And look to `bin/cpuid` for the compiled binaries. 
+
+> You need `gcc` to compile this tool
 
 ## Ressources 
 
