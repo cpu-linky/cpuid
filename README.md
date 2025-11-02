@@ -1,7 +1,13 @@
-# states_tuto
+# CPUID
 
-Ceci est le code du tutoriel trouvé à cette addresse : [A Minimum Complete Tutorial of CPU Power Management, C-states and P-states](https://metebalci.com/blog/a-minimum-complete-tutorial-of-cpu-power-management-c-states-and-p-states)
+This is a tool to use the `CPUID` instruction. 
 
-## Specs
+I am using the `gcc` version : `__get_cpuid()` rather than using the assembly version. 
 
-This tuto is designed for all modern CPU, however you need to check your CPU capacities. Mine (i5-8350U) has the following capacicities : *idle states* ([see here](https://www.intel.com/content/www/us/en/products/sku/124969/intel-core-i58350u-processor-6m-cache-up-to-3-60-ghz/specifications.html)).
+## `cpuid` instruction
+
+The CPUID instruction can be used to retrieve various information about your CPU, such as its vendor string and model number, the size of internal caches and (more interesting), the list of CPU features supported. We will use it to discuss the features and capacity of CPUs for PC states. 
+
+## Ressources 
+
+- Main source : [this amazing site](https://www.felixcloutier.com/x86/cpuid) about the `x86`/`ARM64` arch
