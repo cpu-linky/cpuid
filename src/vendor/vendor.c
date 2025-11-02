@@ -17,6 +17,7 @@ int cpu_vendor(){
     vendor[12] = '\0';
 
     printf("CPU Vendor: %s\n", vendor);
+    printf("Highest value of CPUID for basic infos: %u\n", eax);
 
     return 0;
 }
