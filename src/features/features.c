@@ -44,9 +44,9 @@ const char* feature_names[] = {
 };
 
 int cpu_features(){
-    unsigned int eax, ebx, ecx, edx;
+    unsigned int unused, ecx, edx;
 
-    __get_cpuid(1, &eax, &ebx, &ecx, &edx);
+    __get_cpuid(1, &unused, &unused, &ecx, &edx);
 
     printf("For each feature, a value of 1 means it is available, 0 means it is not\n");
     for (int i = 0; i < 32; i++) {
